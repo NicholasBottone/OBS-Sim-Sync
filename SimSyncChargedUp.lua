@@ -339,7 +339,7 @@ local function checkFile(id)
         obs.obs_source_release(source)
 
         -- Penalty Red
-        local f = io.open(dataDirectory.."/PenR.txt", "rb")
+        local f = io.open(dataDirectory.."/Fouls_R.txt", "rb")
         if f then
             settings = obs.obs_data_create()
             obs.obs_data_set_string(settings, "text", safetyRead(f))
@@ -351,7 +351,7 @@ local function checkFile(id)
         end
 
         -- Penalty Blue
-        local f = io.open(dataDirectory.."/PenB.txt", "rb")
+        local f = io.open(dataDirectory.."/Fouls_B.txt", "rb")
         if f then
             settings = obs.obs_data_create()
             obs.obs_data_set_string(settings, "text", safetyRead(f))
