@@ -5,7 +5,7 @@
     By Nicholas Bottone
 --]]
 
-local SUSTAINABILITY_BONUS_RP = 7
+local SUSTAINABILITY_BONUS_RP = 9
 local ACTIVATION_BONUS_RP = 32
 
 local obs = obslua
