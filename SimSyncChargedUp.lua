@@ -220,6 +220,11 @@ local function checkFile(id)
             gamePiecesRed = gamePiecesRed + tonumber(safetyRead(f))
             f:close()
         end
+        f = io.open(dataDirectory.."/TSuperC_R.txt", "rb") -- Teleop Super
+        if f then
+            gamePiecesRed = gamePiecesRed + tonumber(safetyRead(f))
+            f:close()
+        end
 
         settings = obs.obs_data_create()
         obs.obs_data_set_string(settings, "text", tostring(gamePiecesRed))
@@ -256,6 +261,11 @@ local function checkFile(id)
             f:close()
         end
         f = io.open(dataDirectory.."/TTopC_B.txt", "rb") -- Teleop Top
+        if f then
+            gamePiecesBlue = gamePiecesBlue + tonumber(safetyRead(f))
+            f:close()
+        end
+        f = io.open(dataDirectory.."/TSuperC_B.txt", "rb") -- Teleop Super
         if f then
             gamePiecesBlue = gamePiecesBlue + tonumber(safetyRead(f))
             f:close()
