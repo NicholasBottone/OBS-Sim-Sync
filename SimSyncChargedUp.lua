@@ -494,7 +494,7 @@ local function checkFile(id)
 
         -- RP Red
         settings = obs.obs_data_create()
-        obs.obs_data_set_string(settings, "text", "+"..tostring(redRP).." RP")
+        obs.obs_data_set_string(settings, "text", tostring(redRP))
         source = obs.obs_get_source_by_name("Red RP"..sourceStr)
         obs.obs_source_update(source, settings)
         obs.obs_data_release(settings)
@@ -502,7 +502,7 @@ local function checkFile(id)
 
         -- RP Blue
         settings = obs.obs_data_create()
-        obs.obs_data_set_string(settings, "text", "+"..tostring(blueRP).." RP")
+        obs.obs_data_set_string(settings, "text", tostring(blueRP))
         source = obs.obs_get_source_by_name("Blue RP"..sourceStr)
         obs.obs_source_update(source, settings)
         obs.obs_data_release(settings)
