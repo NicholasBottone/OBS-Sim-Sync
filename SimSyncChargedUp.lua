@@ -423,7 +423,7 @@ local function checkFile(id)
         if (linksRed >= SUSTAINABILITY_BONUS_RP) then
             redRP = redRP + 1
         end
-        if (chargeRed >= ACTIVATION_BONUS_RP) then
+        if (chargeStationRed >= ACTIVATION_BONUS_RP) then
             redRP = redRP + 1
         end
         
@@ -431,7 +431,7 @@ local function checkFile(id)
         if (linksBlue >= SUSTAINABILITY_BONUS_RP) then
             blueRP = blueRP + 1
         end
-        if (chargeBlue >= ACTIVATION_BONUS_RP) then
+        if (chargeStationBlue >= ACTIVATION_BONUS_RP) then
             blueRP = blueRP + 1
         end
 
